@@ -6,7 +6,7 @@ CI_TYPE=${CI_TYPE:-jenkins}
 
 # from buildah-rhtap
 TAG=$(git rev-parse HEAD)
-export IMAGE_URL=${IMAGE_URL-https://artifactory-docker-artifactory-jcr2.apps.rosa.rhtap-services.xmdt.p3.openshiftapps.com/rhtap/rhtap-dotnet:$CI_TYPE-$TAG}
+export IMAGE_URL=${IMAGE_URL-artifactory-docker-artifactory-jcr2.apps.rosa.rhtap-services.xmdt.p3.openshiftapps.com/rhtap/rhtap-dotnet:$CI_TYPE-$TAG}
 export IMAGE=${IMAGE-$IMAGE_URL}
 
 export DOCKERFILE=${DOCKERFILE-docker/Dockerfile}
